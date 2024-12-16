@@ -1,0 +1,88 @@
+/* Tổng thể cho toàn bộ màn hình */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* 100% chiều cao màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Ảnh nền */
+    background-image: url('https://png.pngtree.com/background/20230522/original/pngtree-coffee-shop-in-an-old-building-picture-image_2690132.jpg');
+    background-size: cover; /* Tự động phủ kín toàn bộ */
+    background-position: center; /* Canh giữa */
+    background-repeat: no-repeat;
+
+    /* Hiệu ứng mờ */
+    backdrop-filter: blur(8px); /* Làm mờ */
+    -webkit-backdrop-filter: blur(8px); /* Hỗ trợ WebKit */
+
+    /* Lớp phủ màu nền nhẹ */
+    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ đen trong suốt */
+}
+
+
+
+/* Container chính */
+.login-container {
+    text-align: center; /* Căn chữ giữa */
+    background: #c8c3c3; /* Nền trắng */
+    padding: 30px 20px;
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    width: 100%;
+    max-width: 400px; /* Đặt chiều rộng tối đa */
+}
+
+/* Tiêu đề */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #6b4f4f; /* Màu chữ nổi bật */
+    font-size: 24px;
+}
+
+/* Nhãn */
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* Input */
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #998d8d;
+}
+
+/* Button */
+.container {
+    text-align: center; /* Căn giữa nút */
+}
+
+.login-container button {
+    background-color: #6b4f4f; /* Màu nút */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #553838; /* Màu khi hover */
+}
+
+.login-container button:active {
+    background-color: #432828; /* Màu khi bấm giữ */
+}

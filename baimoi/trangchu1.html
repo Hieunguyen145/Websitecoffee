@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Coffee</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Coffee House</h1>
+        <p>Freshly brewed coffee delivered to your door</p>
+        <div class="user-info">
+            <label id="Yourname" for="customer-name">Your Name:</label>
+            <input type="text" id="customer-name" placeholder=" ">
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for coffee...">
+            <button id="buttonsearch" onclick="filterMenu()">Search</button>
+        </div>
+        <section class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item" data-name="Espresso">
+                <h3>Espresso</h3>
+                <p>$3.00</p>
+                <button onclick="addToCart('Espresso', 3.00)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Latte">
+                <h3>Latte</h3>
+                <p>$4.00</p>
+                <button onclick="addToCart('Latte', 4.00)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>$4.50</p>
+                <button onclick="addToCart('Cappuccino', 4.50)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Americano">
+                <h3>Americano</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart('Americano', 3.50)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Cà phê rang xay">
+                <h3>Cà phê rang xay</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart('Cà phê rang xay', 3.50)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Nâu kem muối">
+                <h3>Nâu kem muối</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart('Nâu kem muối', 3.50)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Americano">
+                <h3>Americano</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart('Americano', 3.50)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Americano">
+                <h3>Americano</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart('Americano', 3.50)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Bạc Xỉu">
+                <h3>Bạc Xỉu</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart('Bạc Xỉu', 3.50)">Add to Cart</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-list">
+                <li>No items in cart</li>
+            </ul>
+            <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+            <button id="buttonclick" onclick="goToAdmin()">Go to Admin</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coffee House. All rights reserved.</p>
+    </footer>
+    <!-- <script src="script1.js"></script> -->
+</body>
+</html>

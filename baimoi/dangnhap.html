@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Chào mừng đến với The Coffee</h1>
+        <form id="login-form">
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" placeholder="Enter your name" required>
+        </form>
+        <form id="login-form">   
+            <label for="table-number">Số Bàn:</label>
+            <input type="number" id="table-number" placeholder="Enter your table number" required>
+        </form>     
+        <div class="container">       
+        <button id="next" type="button" onclick="login()">Di chuyển</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
